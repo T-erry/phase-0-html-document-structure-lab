@@ -36,11 +36,12 @@ describe("index.html", () => {
       expect(html).to.contain("</head>");
       expect(html).to.contain("<body>");
       expect(html).to.contain("</body>");
+      
 
       // This finds the first <html> tag in the HTML document
       const htmlElement = document.querySelector("html");
       // parsedHtml.children returns all tags nested within the <html> tag
-
+       
       // the first child should be a <head> tag
       const hint1 = "Include a <head> element nested inside the <html> element";
       expect(htmlElement, hint1).to.have.descendant("head");
